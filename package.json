@@ -3,15 +3,23 @@
     "version": "1.0.0",
     "description": "Technical Test Backend for Milo Credit",
     "main": "server.js",
+    "jest": {
+        "verbose": true,
+        "setupFilesAfterEnv": [
+            "./tests/jest.config.js"
+        ],
+        "testEnvironment": "node"
+    },
     "scripts": {
         "start": "node server",
         "startNodemon": "nodemon server",
-        "test": "jest test"
+        "test": "jest --detectOpenHandles --forceExit"
     },
     "author": "Ricardo Orozco Leon",
     "license": "ISC",
     "devDependencies": {
-        "jest": "^24.7.1"
+        "jest": "^24.7.1",
+        "supertest": "^4.0.2"
     },
     "dependencies": {
         "bcrypt": "^3.0.5",

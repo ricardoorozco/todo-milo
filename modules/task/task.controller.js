@@ -6,7 +6,7 @@ let create = (req, res) => {
         return res.status(401).json({
             error: true,
             data: {
-                messege: 'Unauthorized user'
+                message: 'Unauthorized user'
             }
         });
     }
@@ -29,7 +29,7 @@ let create = (req, res) => {
             return res.status(200).json({
                 error: false,
                 data: {
-                    messege: 'Task created successfully'
+                    message: 'Task created successfully'
                 }
             });
         }
@@ -155,7 +155,7 @@ let update = (req, res) => {
             return res.status(200).json({
                 error: false,
                 data: {
-                    messege: 'Task updated successfully'
+                    message: 'Task updated successfully'
                 }
             });
         }
@@ -168,7 +168,7 @@ let logicalDelete = (req, res) => {
         return res.status(401).json({
             error: true,
             data: {
-                messege: 'Unauthorized user'
+                message: 'Unauthorized user'
             }
         });
     }
@@ -198,7 +198,7 @@ let logicalDelete = (req, res) => {
             return res.status(200).json({
                 error: false,
                 data: {
-                    messege: 'Task deleted successfully'
+                    message: 'Task deleted successfully'
                 }
             });
         }

@@ -20,12 +20,16 @@ module.exports.login = (req, res) => {
         } else if (!UserDB) {
             return res.status(404).json({
                 error: true,
-                data: 'Username or password incorrect'
+                data: {
+                    message: 'Username or password incorrect'
+                }
             });
         } else if (!bcrypt.compareSync(body.passwd, UserDB.password)) {
             return res.status(404).json({
                 error: true,
-                data: 'Username or password incorrect.'
+                data: {
+                    message: 'Username or password incorrect.'
+                }
             });
         } else {
 

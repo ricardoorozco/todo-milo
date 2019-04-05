@@ -6,7 +6,7 @@ process.env.expiresIn = '24h';
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
 if (process.env.NODE_ENV == 'prod') {
-    console.log("RUN APP IN PROD MODE");
+    //console.log("RUN APP IN PROD MODE");
     process.env.PORT = process.env.PORT || 3000;
     process.env.dbhost = 'ip';
     process.env.dbport = '27017';
@@ -14,7 +14,7 @@ if (process.env.NODE_ENV == 'prod') {
     process.env.dbpasswd = 'passwd';
     process.env.dbdatabase = 'tt_milo';
 } else {
-    console.log("RUN APP IN DEV MODE");
+    //console.log("RUN APP IN DEV MODE");
     process.env.PORT = process.env.PORT || 29000;
     process.env.dbhost = 'localhost';
     process.env.dbport = '27017';
