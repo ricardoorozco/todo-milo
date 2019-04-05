@@ -39,7 +39,8 @@ module.exports.login = (req, res) => {
                 error: false,
                 data: {
                     expiresIn: process.env.expiresIn,
-                    token
+                    token,
+                    test: UserDB._id
                 }
             });
         }

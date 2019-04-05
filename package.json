@@ -13,7 +13,7 @@
     "scripts": {
         "start": "node server",
         "startNodemon": "nodemon server",
-        "test": "jest --detectOpenHandles --forceExit"
+        "test": "jest tests --detectOpenHandles --forceExit"
     },
     "author": "Ricardo Orozco Leon",
     "license": "ISC",

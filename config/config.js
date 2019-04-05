@@ -15,7 +15,7 @@ if (process.env.NODE_ENV == 'prod') {
     process.env.dbdatabase = 'tt_milo';
 } else {
     //console.log("RUN APP IN DEV MODE");
-    process.env.PORT = process.env.PORT || 29000;
+    process.env.PORT = process.env.PORT || 4000;
     process.env.dbhost = 'localhost';
     process.env.dbport = '27017';
     process.env.dbuser = '';

@@ -1,3 +1,4 @@
+//Mongoose preparation for the test environment
 const mongoose = require('mongoose');
 
 beforeAll(function(done) {

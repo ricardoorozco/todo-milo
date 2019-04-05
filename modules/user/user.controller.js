@@ -94,17 +94,19 @@ let list = (req, res) => {
 
 let update = (req, res) => {
 
-    if (!req.isAdmin) {
+    let id = req.params.id;
+    let body = req.body;
+
+    if (!req.isAdmin && req.userToken._id != id) {
         return res.status(401).json({
             error: true,
             data: {
                 message: 'Unauthorized user'
             }
         });
+    } else {
+        where = { _id: req.params.id };
     }
-
-    let id = req.params.id;
-    let body = req.body;
 
     //the attributes __v, created_at, updated_at and deleted_at are omitted because it must not be modified
     delete body.__v;
