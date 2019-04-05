@@ -25,7 +25,7 @@ This app requires that you have installed on your system [Node.js](https://nodej
 
 Clone the project
 ```sh
-$ git clone https://RicardoOrozco@bitbucket.org/RicardoOrozco/todo-nodejs.git
+$ git clone https://github.com/ricardoorozco/todo-milo.git
 ```
 
 Install the dependencies
