@@ -1,4 +1,4 @@
-# ToDo App in NodeJS with Express and MongoDB (JWT and RBAC)
+# ToDo App in Node.js with Express, MongoDB, JWT, RBAC and Test with Jest
 
 Project for technical test backend from Ricardo Orozco León to Milo Credit
 
@@ -74,6 +74,19 @@ Prod environment
 $ npm run start
 ```
 
+---
+### Testing
+
+ - This project uses Jest for unit tests, you can add tests in *./tests/app.test.js*
+ - Configurations before tests on *./tests/jest.config.js* (here is the creation of a parallel database called todo-milo-testing for the tests)
+
+ Run testing
+ ```sh
+$ npm test
+```
+
+Example output
+![alt text](https://i.imgur.com/a2zm1i4.jpg)
 ---
 ## Contact:
 ### *Ricardo Orozco León*

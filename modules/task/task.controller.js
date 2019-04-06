@@ -29,7 +29,8 @@ let create = (req, res) => {
             return res.status(200).json({
                 error: false,
                 data: {
-                    message: 'Task created successfully'
+                    message: 'Task created successfully',
+                    test: taskDB._id
                 }
             });
         }
@@ -106,7 +107,9 @@ let view = (req, res) => {
         } else if (!taskDB) {
             return res.status(404).json({
                 error: true,
-                data: 'Task not found'
+                data: {
+                    message: 'Task not found'
+                }
             });
         } else {
             return res.status(200).json({
@@ -148,7 +151,9 @@ let update = (req, res) => {
         } else if (!taskDB) {
             return res.status(404).json({
                 error: true,
-                data: 'Task not found',
+                data: {
+                    message: 'Task not found'
+                },
                 id
             });
         } else {
@@ -191,7 +196,9 @@ let logicalDelete = (req, res) => {
         } else if (!taskDB) {
             return res.status(404).json({
                 error: true,
-                data: 'Task not found',
+                data: {
+                    message: 'Task not found'
+                },
                 id
             });
         } else {
