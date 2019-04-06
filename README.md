@@ -8,9 +8,6 @@ Database Diagram
 
 ![alt text](https://i.imgur.com/T8ItBPp.jpg)
 
-Test APIs in POSTMAN:
-https://www.getpostman.com/collections/c5180849adaa4f4e8d44
-
 ---
 ### Technologies
 
@@ -77,6 +74,15 @@ Prod environment
 ```sh
 $ npm run start
 ```
+
+---
+### APIs
+
+APIs Doc
+https://documenter.getpostman.com/view/6698360/S1EJXgQY
+
+Copy to Posman:
+https://www.getpostman.com/collections/a83f30e6ca5f85d4f563
 
 ---
 ### Testing
