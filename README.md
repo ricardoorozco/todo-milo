@@ -4,6 +4,9 @@ Project for technical test backend from Ricardo Orozco León to Milo Credit
 
 Backend that offers the necessary APIs for the creation of a ToDo App with login and users roles [ADMIN and USER]
 
+Database Diagram
+![alt text](https://i.imgur.com/T8ItBPp.jpg)
+
 Test APIs in POSTMAN:
 https://www.getpostman.com/collections/c5180849adaa4f4e8d44
 
